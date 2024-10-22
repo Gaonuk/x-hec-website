@@ -17,6 +17,24 @@ const { title } = Astro.props;
 		<title>{title}</title>
 	</head>
 	<body>
+		<header class="w-full bg-blue-500 text-white py-4">
+			<nav class="container mx-auto flex justify-between items-center">
+				<div class="text-2xl font-bold">X-HEC</div>
+				<ul class="flex space-x-8">
+					<li><a href="#" class="hover:underline">Home</a></li>
+					<li>
+						<a href="/program" class="hover:underline">Program</a>
+					</li>
+					<li>
+						<a href="#" class="hover:underline">Students</a>
+					</li>
+					<li><a href="#" class="hover:underline">Alumni</a></li>
+					<li><a href="#" class="hover:underline">Staff</a></li>
+					<li><a href="#" class="hover:underline">News</a></li>
+					<li><a href="#" class="hover:underline">Apply</a></li>
+				</ul>
+			</nav>
+		</header>
 		<slot />
 	</body>
 </html>
